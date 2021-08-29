@@ -1,6 +1,7 @@
 package ua.tef;
 import org.junit.Assert;
 import org.junit.Test;
+
 public class TestClass {
 	
 	Model M1 = new Model();
@@ -14,7 +15,7 @@ public class TestClass {
 	//Class<?> model = Model.class;
 	
 	@Test
-    public void testEquals() {
+        public void testEquals() {
 	   Assert.assertTrue(M1.equalsToSolution(answerM1));
 	   Assert.assertTrue(M2.equalsToSolution(answerM2));
 	   Assert.assertTrue(M3.equalsToSolution(answerM3));
