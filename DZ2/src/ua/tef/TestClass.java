@@ -48,6 +48,7 @@ public class TestClass {
 		Assert.assertFalse(M3.isInBounds(0));
 	} 
 	
+	@Test
 	public void testCompareToSolution() {		
 		Assert.assertEquals(M1.compareToSolutionAndChangeBounds(0), 1);
 		Assert.assertEquals(M1.compareToSolutionAndChangeBounds(answerM1 + 2), 0);
