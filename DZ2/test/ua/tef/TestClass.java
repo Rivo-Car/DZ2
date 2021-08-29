@@ -1,6 +1,8 @@
-package ua.tef;
-import org.junit.Assert;
-import org.junit.Test;
+package ua.tef.test;
+import org.junit.*;
+
+import ua.tef.Model;
+import ua.tef.View;
 
 public class TestClass {
 	
