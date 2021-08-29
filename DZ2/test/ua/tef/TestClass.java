@@ -54,6 +54,16 @@ public class TestClass {
 		Assert.assertNotEquals(MD.compareToSolutionAndChangeBounds(3), 0);
 	}
 	
+	@Test
+	public void testRand() {
+		int[] set = new int[100];
+		for(int i = 0; i < 10000000; i++) {
+			Model M1 = new Model();
+			++set[M1.getAnswer()];
+		}
+		for (int i : set) View.printMessage("" + i + ", ");
+	}
+	
 	private int ParseInt(Model M) {
 		return Integer.parseInt(M.answerToConsole(""));
 	}
