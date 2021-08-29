@@ -1,9 +1,10 @@
+package ua.tef;
+
 import static org.junit.Assert.*;
 import java.lang.reflect.*;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ua.tef.Model;
 
 public class TestClass {
 	
