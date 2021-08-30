@@ -65,7 +65,7 @@ public class TestClass {
 		
 		for(int i = 0; i < attemptsNumber; i++) {
 			Model M1 = new Model();
-			++set[M1.getAnswer()];
+			++set[ParseInt(M1)];
 		}
 		
 		for (int j = 1; j < 100; j++) { 
