@@ -14,7 +14,6 @@ public class TestClass {
 	int answerM2 =  ParseInt(M2);
 	int answerM3 =  ParseInt(M3);
 	int answerMD =  ParseInt(MD);
-	//Class<?> model = Model.class;
 	
 	@Test
         public void testEquals() {
