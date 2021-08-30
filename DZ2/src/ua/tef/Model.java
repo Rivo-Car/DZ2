@@ -26,8 +26,6 @@ public class Model {
     	return this.statistics;
     }
     
-    public int getAnswer ( ) {return answer;}
-    
     public void addToStats(String str) {
     	this.statistics += str;
     }
