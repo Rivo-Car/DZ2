@@ -58,13 +58,20 @@ public class TestClass {
 	
 	@Test
 	public void testRand() {
-		int[] set = new int[100];
-		for(int i = 0; i < 10000000; i++) {
+		int[] set = new int[101];
+		int attemptsNumber = 1000000;
+		double probability = attemptsNumber/99;
+		double errorThreePercent = probability * 0.03;
+		
+		for(int i = 0; i < attemptsNumber; i++) {
 			Model M1 = new Model();
 			++set[M1.getAnswer()];
 		}
-		for (int i : set) View.printMessage("" + i + ", ");
+		
+		for (int j = 1; j < 100; j++) { 
+			Assert.assertTrue(Math.abs(set[j] - probability) < errorThreePercent);}
 	}
+	
 	
 	private int ParseInt(Model M) {
 		return Integer.parseInt(M.answerToConsole(""));
