@@ -13,7 +13,7 @@ public class Model {
     public Model(int min, int max) {
     	this.minBound = min;
     	this.maxBound = max;
-    	this.answer = minBound + 1 + (int) Math.round(Math.random() * (maxBound - minBound - 2));
+    	this.answer = minBound + (int) Math.round(0.5 + Math.random() * (maxBound - minBound - 1));
     	this.statistics = "\nВаша статистика:";
     	this.count = 0;
     }
