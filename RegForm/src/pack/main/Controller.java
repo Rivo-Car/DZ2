@@ -21,7 +21,7 @@ public class Controller{
     			"input.string.data","input.first.name.data");
     	processInput(sc, "regex.surname.data", Fields.Surname,
     			"input.string.data","input.surname.data");
-    	processInput(sc, "regex.first.name.data", Fields.Patronymic,
+    	processInput(sc, "regex.patr.data", Fields.Patronymic,
     			"input.string.data","input.patr.data");
     	model.FIO();
     	processInput(sc, "regex.login.data", Fields.Login,
