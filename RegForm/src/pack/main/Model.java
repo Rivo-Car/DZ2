@@ -33,6 +33,7 @@ public class Model {
     		    datas[order] = (field.toString().replace("_", " ") + ": "  + regDatas.get(field));
     	    }   	   		
     	} else {
+		
     		for(Fields field: Fields.values()) {
     			int order = field.ordinal();
     			Polia pole = Polia.values()[order];
