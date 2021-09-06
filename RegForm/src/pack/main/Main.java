@@ -1,7 +1,5 @@
 package pack.main;
 
-import java.util.Scanner;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -10,5 +8,4 @@ public class Main {
      Controller c = new Controller(new Model(), new View());
      c.processUser();
 	}
-
 }
