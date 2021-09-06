@@ -17,28 +17,28 @@ public class Controller{
 	public void processUser(){  
 		Scanner sc = new Scanner(System.in);
 		View.println(View.bundleString("output.greeting"));		
-//    	processInput(sc, "regex.first.name.data", Fields.First_name, 
-//    			"input.string.data","input.first.name.data");
-//    	processInput(sc, "regex.surname.data", Fields.Surname,
-//    			"input.string.data","input.surname.data");
-//    	processInput(sc, "regex.first.name.data", Fields.Patronymic,
-//    			"input.string.data","input.patr.data");
-//    	model.FIO();
-//    	processInput(sc, "regex.login.data", Fields.Login,
-//    			"input.string.data","input.login.data");
+    	processInput(sc, "regex.first.name.data", Fields.First_name, 
+    			"input.string.data","input.first.name.data");
+    	processInput(sc, "regex.surname.data", Fields.Surname,
+    			"input.string.data","input.surname.data");
+    	processInput(sc, "regex.first.name.data", Fields.Patronymic,
+    			"input.string.data","input.patr.data");
+    	model.FIO();
+    	processInput(sc, "regex.login.data", Fields.Login,
+    			"input.string.data","input.login.data");
     	processInputGroup(sc);
-//    	processInput(sc, "regex.home.number.data", Fields.Home_Phone,
-//    			"input.string.data","input.home.number.data");
-//    	processInput(sc, "regex.first.mobile.number.data", Fields.Mobile_Phone,
-//    			"input.string.data","input.first.mobile.number.data");
-//    	processInput(sc, "regex.second.mobile.number.data", Fields.Mobile_Phone_2,
-//    			"input.string.data","input.second.mobile.number.data");
-//    	processInput(sc, "regex.email.data", Fields.Email,
-//    			"input.string.data","input.email.data");
-//		processInput(sc, "regex.skype.data", Fields.Skype,
-//				"input.string.data","input.skype.data");
-//		processInput(sc, "regex.address.data", Fields.Address,
-//				"input.string.data","input.address.data");
+    	processInput(sc, "regex.home.number.data", Fields.Home_Phone,
+    			"input.string.data","input.home.number.data");
+    	processInput(sc, "regex.first.mobile.number.data", Fields.Mobile_Phone,
+    			"input.string.data","input.first.mobile.number.data");
+    	processInput(sc, "regex.second.mobile.number.data", Fields.Mobile_Phone_2,
+    			"input.string.data","input.second.mobile.number.data");
+    	processInput(sc, "regex.email.data", Fields.Email,
+    			"input.string.data","input.email.data");
+		processInput(sc, "regex.skype.data", Fields.Skype,
+				"input.string.data","input.skype.data");
+		processInput(sc, "regex.address.data", Fields.Address,
+				"input.string.data","input.address.data");
 		model.WriteToUserData(Fields.Date_of_Creation, java.time.LocalDate.now().toString());
 		model.WriteToUserData(Fields.This_day, java.time.LocalDate.now().toString());
     	View.println("");
