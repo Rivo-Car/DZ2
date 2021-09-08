@@ -46,20 +46,11 @@ public class Model {
     
     public String[] returnDatas(String locale) {
     	String datas[] = new String[Fields.values().length];
+    	int loc = locale.equals("en") ? 0 : 1;
     	
-    	if (locale.equals("en")) {
-    	
-    		for(Fields field: Fields.values()) {
-    			int order = field.ordinal();		
-    		    datas[order] = (field.toString().replace("_", " ") + ": "  + regDatas.get(field));
-    	    }   	   		
-    	} else {
-    		
-    		for(Fields field: Fields.values()) {
-    			int order = field.ordinal();
-    			Polia pole = Polia.values()[order];
-    		    datas[order] = (pole.toString().replace("_", " ") + ": "  + regDatas.get(field));
-    	    }
+    	for(Fields field: Fields.values()) {
+    		int order = field.ordinal();		
+    		datas[order] = (field.value(loc) + ": "  + regDatas.get(field));
     	}
     	return datas;
     }
