@@ -1,5 +1,7 @@
 package pack.main;
 
+import java.util.List;
+
 public enum Fields {
 	First_name("First name", "Iм'я"),
 	Surname("Surname", "Прiзвище"),	
