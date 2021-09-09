@@ -13,6 +13,11 @@ public class Model {
 		this.WriteToUserData(Fields.This_day, java.time.LocalDate.now().toString());
     }
 
+    public Model(String Login) {
+    	this();
+    	this.WriteToUserData(Fields.Login, Login);
+    }
+    
     private void WriteToUserData(Fields field, String Data) {
     	regDatas.put(field, Data);
     }
@@ -42,6 +47,12 @@ public class Model {
     		this.WriteToUserData(Fields.Group, input);
     	}
     	return result;
+    }
+    
+    public boolean matches(Model m2, Fields field) {
+    	String field1 = this.regDatas.get(field); 
+    	String field2 = m2.regDatas.get(field);
+    	return field1.equals(field2);
     }
     
     public String[] returnDatas(String locale) {
