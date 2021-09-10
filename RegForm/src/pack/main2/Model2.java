@@ -5,9 +5,6 @@ import pack.main.Fields;
 import pack.main.Model;
 
 public class Model2 {	
-//    Model M1 = new Model("passat2131332");
-//    Model M2 = new Model("ortrtrt21232133");
-//	  Model M3 = new Model("Passarter");
 	private ArrayList<Model> UserList;
 	
 	public Model2() {
