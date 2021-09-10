@@ -24,5 +24,7 @@ class TestModel {
 		Assertions.assertFalse(M2.isAuthentic("ASsssssss"), "");
 		Assertions.assertTrue(M2.isAuthentic("ASssssSSss"), "");
 	}
+	
+	
 
 }
