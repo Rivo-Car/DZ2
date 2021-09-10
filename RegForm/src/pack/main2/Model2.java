@@ -1,12 +1,13 @@
 package pack.main2;
 import java.util.ArrayList;
 
+import pack.main.Fields;
 import pack.main.Model;
 
 public class Model2 {	
 //    Model M1 = new Model("passat2131332");
 //    Model M2 = new Model("ortrtrt21232133");
-//	Model M3 = new Model("Passarter");
+//	  Model M3 = new Model("Passarter");
 	private ArrayList<Model> UserList;
 	
 	public Model2() {
@@ -26,5 +27,12 @@ public class Model2 {
 		UserList.set(UserList.indexOf(m1), m2);
 	}
 	
-	
+	public boolean isAuthentic(String LoginInput) {	
+		
+		for(Model m: UserList) {
+			if(Model.matches(LoginInput, m, Fields.Login)) return false;
+		}
+		return true;
+	}
+		
 }

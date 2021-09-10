@@ -49,9 +49,8 @@ public class Model {
     	return result;
     }
     
-    public boolean matches(Model m2, Fields field) {
-    	String field1 = this.regDatas.get(field); 
-    	String field2 = m2.regDatas.get(field);
+    public static boolean matches(String field1, Model m2, Fields fieldM2) { 
+    	String field2 = m2.regDatas.get(fieldM2);
     	return field1.equals(field2);
     }
     
