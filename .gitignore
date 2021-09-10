@@ -3,6 +3,7 @@ bin/
 tmp/
 .metadata
 .project
+.classpath
 *.tmp
 *.bak
 *.swp
