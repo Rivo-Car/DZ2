@@ -22,7 +22,7 @@ public final class Student {
    }
    
    public int hashCode() {
-    int prime = 19;
+    int prime = 1009;
     int hash = 0;
     hash += age;
     hash += !name.equals(null)  ? name.hashCode()  * prime : 0;
