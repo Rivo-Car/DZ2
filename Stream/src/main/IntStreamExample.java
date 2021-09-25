@@ -7,7 +7,7 @@ public class IntStreamExample {
 
  public static void main(String[] args) {
   int multiplicator = 5;
-  int[] array = {1,2,4,5,-5,6,4,0,5,1,-13,12,1231,123};
+  int[] array = {1,2,4,5,-5,6,4,0,5,1,-13,-13,12,1231,123};
   try {
    double mean = Arrays.
     stream(array).
@@ -40,7 +40,7 @@ public class IntStreamExample {
       System.err.println("Our array: " + Arrays.toString(array));
       System.err.println("mean: " + mean);
       System.err.println("min: " + min);
-      System.err.println("Index of minimum element: " + indexOfMin);
+      System.err.println("АFirst index of minimum element: " + indexOfMin);
       System.err.println("Number of 0 entrances: " + zeroRepeat);
       System.err.println("Number of positive entrances: " + positives);
       System.err.print("Multiplied by " + multiplicator + " array: ");
